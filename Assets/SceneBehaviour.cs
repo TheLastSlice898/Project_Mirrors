@@ -1,0 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class SceneBehaviour : MonoBehaviour
+{
+
+
+    public string SceneName;
+
+
+    private void Update()
+    {
+        
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Player")
+        {
+            SceneManager.LoadScene(SceneName);
+        }
+        
+        
+
+    }
+
+
+}
