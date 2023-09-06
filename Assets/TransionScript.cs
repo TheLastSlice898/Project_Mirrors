@@ -20,6 +20,11 @@ public class TransionScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.GetSceneByName(Scenename);
+        
+
+        if (other.gameObject.name == "Player")
+        {
+            SceneManager.LoadScene(Scenename);
+        }
     }
 }
