@@ -8,6 +8,8 @@ public class ItemSelect : MonoBehaviour
 
     public bool IsSelected;
 
+    public bool Pressed;
+
     public bool timer;
     public float Timerlength = 0.1f;
     public MeshRenderer Mesh;
@@ -15,6 +17,8 @@ public class ItemSelect : MonoBehaviour
     public List<Material> OrigianlMats;
 
     public Material OrigianlMat;
+
+    public GameObject ExitMirror;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +36,9 @@ public class ItemSelect : MonoBehaviour
 
             if (Input.GetMouseButton(0))
             {
+                Pressed = true;
                 GameManager.GayManager.SetOverStim();
+                gameObject.SetActive(false);
             }
         }
 
@@ -55,6 +61,12 @@ public class ItemSelect : MonoBehaviour
         else
         {
             Mesh.SetMaterials(OrigianlMats);
+        }
+
+
+        if (Pressed)
+        {
+            ExitMirror.SetActive(true);
         }
     }
 
