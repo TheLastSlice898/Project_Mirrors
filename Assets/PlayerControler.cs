@@ -41,7 +41,7 @@ public class PlayerControler : MonoBehaviour
 
 
             Vector3 MoveDir = Quaternion.Euler(0f, Targetangle, 0f) * Vector3.forward;
-            PlayerRB.velocity = new Vector3(MoveDir.x, PlayerRB.velocity.y, MoveDir.z);
+            PlayerRB.velocity = new Vector3((MoveDir.x * PlayerSensitivity), PlayerRB.velocity.y, (MoveDir.z * PlayerSensitivity));
         }
 
         if (Input.GetKeyDown(KeyCode.Space))

@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594774292247608669}
-  m_LocalRotation: {x: -0.4304654, y: 0.000000015530603, z: 0.0000000074067525, w: 0.9026071}
+  m_LocalRotation: {x: -0.4304654, y: -0.000000015530606, z: -0.000000007406754, w: 0.9026071}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -230,7 +230,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211620975754907254}
-  m_LocalRotation: {x: -0.41401997, y: -0.00000001566242, z: -0.000000007123788, w: 0.91026783}
+  m_LocalRotation: {x: -0.41402, y: 0.00000001566241, z: 0.000000007123784, w: 0.91026783}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -583,7 +583,7 @@ Transform:
   - {fileID: 9077649281120232210}
   - {fileID: 6078699624445661173}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1213192507490262407
 CapsuleCollider:
@@ -626,7 +626,7 @@ MonoBehaviour:
   PlayerOBJ: {fileID: 2472637137739575416}
   layerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 1024
   JumpHeight: 4.25
 --- !u!54 &3070002080716530387
 Rigidbody:
@@ -946,7 +946,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8791285348747189792}
-  m_LocalRotation: {x: -0.39739415, y: -0, z: -0, w: 0.917648}
+  m_LocalRotation: {x: -0.39739415, y: 2.0113714e-37, z: 3.054508e-38, w: 0.917648}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
